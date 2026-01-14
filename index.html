@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Top Čistota.cz – Čištění sedaček, koberců a interiérů</title>
+<meta name="description" content="Top Čistota.cz – Profesionální čištění sedaček, koberců a interiérů aut.">
+
+<style>
+/* =====================
+   RESET & ZÁKLAD
+===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  min-height: 100%;
+}
+
+/* =====================
+   POZADÍ – STEJNÉ JAKO KONTAKT
+===================== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('images/background.jpg') center / cover no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: -1;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 15px 20px;
+}
+
+.logo img {
+  height: 250px;
+  max-width: 100%;
+}
+
+/* =====================
+   NAVIGACE
+===================== */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.35);
+  color: #00c8ff;
+}
+
+/* =====================
+   MAIN
+===================== */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 80px;
+  gap: 40px;
+  width: 100%;
+}
+
+/* =====================
+   CONTENT BOX
+===================== */
+.content,
+.kontakt-box {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255,255,255,0.95);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.content img {
+  width: 100%;
+  max-width: 320px;
+  border-radius: 15px;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+h1, h2 {
+  text-align: center;
+  color: #004d66;
+}
+
+p, li {
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+/* =====================
+   KONTAKT
+===================== */
+.kontakt-box {
+  text-align: center;
+}
+
+/* =====================
+   FOOTER – SJEDNOCENÝ
+===================== */
+footer {
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.75rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: #00c8ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .logo img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 140px;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="Top Čistota.cz"></a>
+  </div>
+
+  <nav>
+    <a href="index.html">Hlavní stránka</a>
+    <a href="sluzby.html">Služby</a>
+    <a href="cenik.html">Ceník</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <div class="content">
+    <h1>Profesionální čištění sedaček, koberců, interiérů a aut</h1>
+    <img src="images/foto_main.jpg" alt="Čištění sedačky a auta">
+    <p>
+      Věnujeme se hloubkovému čištění sedaček, křesel, taburetů, koberců i automobilů.
+      Vaše sedačka, křeslo nebo interiér auta bude opět jako nové – provoněné čistotou
+      a zbavené nečistot i alergenů.
+    </p>
+    <p>
+      Potřebujete vyčistit sedačku, koberec nebo interiér auta? Nebo zajistit kompletní
+      úklid domácnosti či firemních prostor? Jsme tu pro vás – rychle, kvalitně a za
+      férovou cenu. Pracujeme s profesionálním vybavením značky Kärcher a používáme
+      účinnou, ale šetrnou chemii.
+    </p>
+  </div>
+
+  <div class="content">
+    <h2>Proč si vybrat právě nás?</h2>
+    <ul>
+      <li>Profesionální vybavení Kärcher – špičková technika pro dokonalé výsledky.</li>
+      <li>Hloubkové čištění – odstraníme i skrytou špínu a alergeny.</li>
+      <li>Odstranění pachů – svěží vůně místo nepříjemných zápachů.</li>
+      <li>Kvalitní čisticí prostředky – bezpečné a účinné.</li>
+      <li>Rychlá domluva – přijedeme k vám v čase, který vám vyhovuje.</li>
+      <li>Čistota bez starostí – vše uděláme u vás doma.</li>
+      <li>Pečlivá práce – individuální přístup ke každé zakázce.</li>
+      <li>Spokojenost zákazníků – naším cílem je, abyste měli domov jako nový.</li>
+    </ul>
+  </div>
+
+  <div class="kontakt-box">
+    <h2>Kontaktujte nás</h2>
+    <p><h3>📞 605 588 223</h3></p>
+    <p><h3>✉️ topcistota@gmail.com </h3></p>
+    <p>
+  <div style="margin-top:6px;">
+  <a href="https://www.instagram.com/topcistota?igsh=Nms0eHc0YnNpZmNl&utm_source=qr"
+     target="_blank" rel="noopener">
+    <img src="images/instagram.png" alt="Instagram Top Čistota"
+         style="height:22px; margin-right:10px; vertical-align:middle;">
+  </a>
+
+  <a href="https://www.facebook.com/share/1DKCcuRRSF/?mibextid=wwXIfr"
+     target="_blank" rel="noopener">
+    <img src="images/facebook.png" alt="Facebook Top Čistota"
+         style="height:22px; vertical-align:middle;">
+  </a>
+</div>
+    </p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Top Čistota.cz – Všechna práva vyhrazena.</p>
+  <p>IČO: 21357803 | Tel: <a href="tel:+420605588223">605 588 223</a> |
+     E-mail: <a href="mailto:topcistota@gmail.com">topcistota@gmail.com</a></p>
+  <p><a href="gdpr.html">Zásady ochrany osobních údajů (GDPR)</a></p>
+</footer>
+
+</body>
+</html>

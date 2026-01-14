@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Top Čistota.cz – Zásady ochrany osobních údajů (GDPR)</title>
+
+<style>
+/* =====================
+   RESET & ZÁKLAD
+===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  min-height: 100%;
+}
+
+/* =====================
+   BACKGROUND
+===================== */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: url('images/background.jpg') center / cover no-repeat fixed;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: -1;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 15px 20px;
+  background: transparent;
+}
+
+.logo img {
+  height: 250px;
+  max-width: 100%;
+  cursor: pointer;
+}
+
+/* =====================
+   NAVIGACE
+===================== */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  flex: 1;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.35);
+  color: #00c8ff;
+}
+
+/* =====================
+   MAIN
+===================== */
+main {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px 80px;
+  gap: 40px;
+  width: 100%;
+}
+
+/* =====================
+   CONTENT BOX
+===================== */
+.content {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255,255,255,0.95);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+.content h1, .content h2 {
+  text-align: center;
+  color: #004d66;
+  margin-bottom: 20px;
+}
+
+.content p {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+}
+
+.content a {
+  color: #00c8ff;
+  text-decoration: none;
+}
+
+.content a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  text-align: center;
+  padding: 8px 10px;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+}
+
+footer a {
+  color: #00c8ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+  .logo img {
+    height: 180px;
+  }
+  nav {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 140px;
+  }
+  .content { padding: 20px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="Top Čistota.cz"></a>
+  </div>
+
+  <nav>
+    <a href="index.html">Hlavní stránka</a>
+    <a href="sluzby.html">Služby</a>
+    <a href="cenik.html">Ceník</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <div class="content">
+    <h1>Zásady ochrany osobních údajů (GDPR)</h1>
+
+    <p>Vaše soukromí je pro nás důležité. Tato stránka popisuje, jak shromažďujeme, používáme a chráníme osobní údaje, které nám poskytujete při kontaktování a využívání našich služeb.</p>
+
+    <h2>Shromažďování osobních údajů</h2>
+    <p>Shromažďujeme pouze ty údaje, které nám dobrovolně poskytnete prostřednictvím kontaktního formuláře nebo e-mailu, jako jsou: jméno, e-mailová adresa, telefonní číslo a zpráva.</p>
+
+    <h2>Účel zpracování</h2>
+    <p>Vaše údaje používáme výhradně za účelem odpovědi na Vaši zprávu, sjednání služby nebo informování o našich službách.</p>
+
+    <h2>Ochrana údajů</h2>
+    <p>Vaše údaje jsou uchovávány bezpečně a nepředáváme je třetím stranám, pokud to není nezbytné k poskytnutí služby.</p>
+
+    <h2>Vaše práva</h2>
+    <p>Máte právo na přístup k osobním údajům, opravu, výmaz, omezení zpracování a vznést námitku proti jejich zpracování.</p>
+
+    <h2>Kontakt</h2>
+    <p>V případě dotazů ohledně ochrany osobních údajů nás můžete kontaktovat na e-mailu <a href="mailto:topcistota@gmail.com">topcistota@gmail.com</a> nebo telefonu <a href="tel:+420605588223">605 588 223</a>.</p>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Top Čistota.cz – Všechna práva vyhrazena.</p>
+  <p>IČO: 21357803 | Tel: <a href="tel:+420605588223">605 588 223</a> | 
+     E-mail: <a href="mailto:topcistota@gmail.com">topcistota@gmail.com</a></p>
+</footer>
+
+</body>
+</html>

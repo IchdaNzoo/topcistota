@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Top Čistota.cz – Ceník</title>
+
+<style>
+/* =====================
+   RESET & ZÁKLAD
+===================== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow-x: hidden;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* =====================
+   BACKGROUND – STEJNÝ JAKO KONTAKT
+===================== */
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url('images/background.jpg') center / cover no-repeat;
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+  z-index: -1;
+}
+
+/* =====================
+   HEADER
+===================== */
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  padding: 15px 20px;
+}
+
+.logo img {
+  height: 250px;
+  max-width: 100%;
+}
+
+/* =====================
+   NAVIGACE
+===================== */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  flex: 1;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px 16px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.2);
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+nav a:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+/* =====================
+   MAIN
+===================== */
+main {
+  flex: 1;
+  padding: 30px 20px 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* =====================
+   CONTENT BOX
+===================== */
+.content {
+  width: 100%;
+  max-width: 900px;
+  background: rgba(255,255,255,0.96);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+  text-align: center;
+}
+
+.content h1 {
+  color: #004d66;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+.content th,
+.content td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+.content th {
+  background: #004d66;
+  color: #fff;
+}
+
+.content tr:nth-child(even) { background: #f7f7f7; }
+.content tr:nth-child(odd)  { background: #ffffff; }
+
+.content small {
+  display: block;
+  margin-top: 12px;
+  color: #555;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+/* =====================
+   FOOTER
+===================== */
+footer {
+  background: rgba(0,0,0,0.75);
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  font-size: 0.75rem;
+  margin-top: auto;
+}
+
+footer a {
+  color: #00c8ff;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo img {
+    height: 180px;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo img {
+    height: 140px;
+  }
+
+  .content table,
+  .content th,
+  .content td {
+    font-size: 0.85rem;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html"><img src="images/logo.png" alt="Top Čistota.cz"></a>
+  </div>
+
+  <nav>
+    <a href="index.html">Hlavní stránka</a>
+    <a href="sluzby.html">Služby</a>
+    <a href="cenik.html">Ceník</a>
+    <a href="galerie.html">Galerie</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+</header>
+
+<main>
+  <div class="content">
+    <h1>Ceník</h1>
+
+    <table>
+      <tr><th>Služba</th><th>Cena</th></tr>
+
+      <tr><td>Tepování sedačky – dvojmístná</td><td>od 800 Kč</td></tr>
+      <tr><td>Tepování sedačky – třímístná</td><td>od 1 000 Kč</td></tr>
+      <tr><td>Tepování sedačky – tvar L</td><td>od 1 500 Kč</td></tr>
+      <tr><td>Tepování sedačky – tvar U</td><td>od 1 900 Kč</td></tr>
+
+      <tr><td>Tepování křesla</td><td>od 400 Kč</td></tr>
+      <tr><td>Tepování taburetu</td><td>od 250 Kč</td></tr>
+      <tr><td>Kancelářská židle</td><td>od 350 Kč</td></tr>
+
+      <tr><td>Čištění koberců</td><td>od 40 Kč / m²</td></tr>
+
+      <tr><td>Tepování automobilu – interiér</td><td>od 2 200 Kč</td></tr>
+      <tr><td>Tepování autosedačky (dětské)</td><td>od 300 Kč</td></tr>
+
+      <tr><td>Úklid domácnosti</td><td>od 250 Kč / hod</td></tr>
+
+      <tr><td>Mytí oken – standardní okno</td><td>od 80 Kč / ks</td></tr>
+      <tr><td>Mytí oken – balkonové dveře</td><td>od 150 Kč / ks</td></tr>
+      <tr><td>Mytí oken – výlohy / velké plochy</td><td>cena dohodou</td></tr>
+
+      <tr><td>Doprava</td><td>7,5 Kč / km</td></tr>
+
+      <tr><td>Čištění kožené sedačky – dvojmístná</td><td>od 1 200 Kč</td></tr>
+      <tr><td>Čištění kožené sedačky – třímístná</td><td>od 1 600 Kč</td></tr>
+      <tr><td>Čištění kožené sedačky – tvar L</td><td>od 2 000 Kč</td></tr>
+
+      <tr><td>Impregnace kožené sedačky (celá)</td><td>od 500 Kč</td></tr>
+      <tr><td>Impregnace kožené sedačky (sedací místo)</td><td>od 180 Kč / místo</td></tr>
+      <tr><td>Voskování / ochrana kožené sedačky</td><td>od 180 Kč / sedací místo</td></tr>
+    </table>
+
+    <small>Uvedené ceny jsou orientační a včetně DPH.</small>
+  </div>
+</main>
+
+<footer>
+  <p>© 2025 Top Čistota.cz – Všechna práva vyhrazena.</p>
+  <p>IČO: 21357803 | Tel: <a href="tel:+420605588223">605 588 223</a> |
+     E-mail: <a href="mailto:topcistota@gmail.com">topcistota@gmail.com</a></p>
+  <p><a href="gdpr.html">Zásady ochrany osobních údajů (GDPR)</a></p>
+</footer>
+
+</body>
+</html>
